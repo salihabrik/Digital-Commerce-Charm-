@@ -678,7 +678,7 @@ body {
     transform: translateY(6rem);
 }
 .featured.featured-slider.box.image img {
-    height: 25rem;
+    height: 30rem;
 }
 
 .featured .featured-slider .box .content {
@@ -729,6 +729,10 @@ body {
     z-index: 1;
     transition: all.3s ease;
     transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
 }
 .featured .featured-slider .box .icons a {
     font-size: 2.2rem;
