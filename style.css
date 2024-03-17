@@ -4,7 +4,7 @@
 :root {
     --green-color: #EABE6C;
     --dark-color: #FFC374;
-    --black: #444;
+    --black: #666;
     --light-color: #666;
     --border: .1rem solid rgba(0, 0, 0, .1);
     --border-hover: .1rem solid var(--green-color);
@@ -22,10 +22,10 @@
     text-transform: capitalize;
     transition: all .2s linear;
     transition: width none;
-    -webkit-transition: width none;
-    -moz-transition: width none;
-    -ms-transition: width none;
-    -o-transition: width none;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    -o-transition: all .2s linear;
 }
 
 html {
