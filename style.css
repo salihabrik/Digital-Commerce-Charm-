@@ -474,7 +474,11 @@ body {
     background: url(../images/banner.avif) no-repeat;
     background-size: cover;
     background-position: center;
+}.home .row .content .btn{
+co var(--green-color);lor: 
 }
+
+
 .home .row {
     display: flex;
     align-items: center;
@@ -484,10 +488,10 @@ body {
 .books-slider a img {
     height: 22rem;
     border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius:.5rem;
-    -o-border-radius:.5rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
     object-fit: cover;
     cursor: pointer;
     transition: all .3s ease;
