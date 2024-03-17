@@ -46,7 +46,7 @@ function loader() {
 
 // Function to fade out loader after 3 seconds
 function fadeOut() {
-    setTimeout(loader, 3000);
+    setTimeout(loader, 19000);
 }
 
 // Swiper initialization for the books-slider
