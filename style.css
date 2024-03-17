@@ -813,6 +813,27 @@ body {
 
 }
 
+.notification {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.notification img {
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
 
 
 .arrivals .arrivals-slider .box {
