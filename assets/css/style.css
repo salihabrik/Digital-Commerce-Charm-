@@ -1877,7 +1877,11 @@ footer {
     text-transform: uppercase;
     cursor: pointer;
     transition: var(--transition-timing);
-  }
+    -webkit-transition: var(--transition-timing);
+    -moz-transition: var(--transition-timing);
+    -ms-transition: var(--transition-timing);
+    -o-transition: var(--transition-timing);
+}
 
   .header-top-actions select:hover { color: var(--eerie-black); }
 

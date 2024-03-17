@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Creepster&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap')
 
 :root {
     --green-color: #EABE6C;
@@ -51,6 +51,54 @@ html::-webkit-scrollbar-thumb {
 
 section {
     padding: 5rem 9%;
+}
+
+
+
+.circular-logo {
+                border-radius: 50%;
+            }
+
+.logo-text {
+
+        font-family: "Creepster", system-ui;
+        font-weight: 800;
+        font-style: normal;
+        color: blue;
+    }
+.logo-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo-container img {
+        width: 100px; 
+        height: auto; 
+    }
+
+    
+
+    
+    @media (max-width: 600px) {
+        .logo-text {
+            flex-direction: column;
+            text-align: center;
+            margin-right: 220px;
+        }
+
+        .logo-container  {
+            margin-top: 5px;
+            margin-left: -20px;
+        }
+    }
+.logo-container {
+  display: flex;
+  align-items: center; 
+}
+
+.logo-text {
+  margin-left: 10px;
+  font-size: 20px;
 }
 .logo {
   display: flex;
