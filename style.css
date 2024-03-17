@@ -475,7 +475,7 @@ body {
     background-size: cover;
     background-position: center;
 }.home .row .content .btn{
-co var(--green-color);lor: 
+color: var(--green-color); 
 }
 
 
