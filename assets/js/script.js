@@ -1,4 +1,3 @@
-
 'use strict';
 
 // modal variables
