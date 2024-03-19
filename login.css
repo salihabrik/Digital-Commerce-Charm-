@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+main {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: hsl(29, 90%, 65%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #FFC374;
+}
+
+a {
+  text-decoration: none;
+  color: #EABE6C;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  height: 100vh; /* Make sure the body covers the full height of the viewport */
+}
+
+main {
+  max-width: 600px; /* Set a maximum width for the main content */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+header {
+  background-color: #EABE6C;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+header img {
+  height: 50px; /* Adjust height as needed */
+}
+
+main {
+  max-width: 400px;
+  margin-top: 60px; /* Adjust margin-top to create space below the fixed header */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add your existing form styles here */
+footer {
+  background-color:#EABE6C;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  color: hsl(0, 100%, 70%);;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.social-icon:hover {
+  color: hsl(29, 90%, 65%); /* Change color on hover */
+}
+
+footer p {
+  margin: 0;
+}
