@@ -1783,7 +1783,7 @@ footer {
 
   .header-alert-news {
     color: var(--sonic-silver);
-    font-size: var(--fs-9);
+    font-size: var(--fs-5);
     text-transform: uppercase;
   }
 
