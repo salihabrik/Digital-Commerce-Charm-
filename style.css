@@ -100,24 +100,7 @@ section {
   margin-left: 10px;
   font-size: 20px;
 }
-.logo {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  font-size: 2.5rem;
-  overflow: hidden;
-  
-}
-
-.logo img {
-  width: 60px;
-  height: auto;
-  margin-right: 10px;
-  border-radius: 50%;
-  
-}
+/*
 .heading {
     text-align: center;
     margin-bottom: 2rem;
@@ -314,7 +297,7 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap; 
 }
 
 .navbar a {
@@ -324,10 +307,10 @@ body {
     display: inline-block;
 }
 
-/* Media query for smaller screens */
+
 @media screen and (max-width: 600px) {
     .navbar a {
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 10px; 
     }
 }
 
@@ -516,10 +499,10 @@ body {
 .home .row .books-slider a img {
     height:22rem;
     border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-    -ms-border-radius: .5rem;
-    -o-border-radius: .5rem;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
     object-fit: cover;
     cursor: pointer;
     transition: all .3s ease;
@@ -527,10 +510,13 @@ body {
     -moz-transition: all .3s ease;
     -ms-transition: all .3s ease;
     -o-transition: all .3s ease;
-
 }
 .home .row .books-slider a:hover img {
     transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
 }
 
 .home .row .books-slider .stand {
@@ -553,9 +539,10 @@ body {
     margin: 0;
     overflow: hidden;
     border-radius: .5rem;
-    -webkit-border-radius: .5rem;
-    -moz-border-radius: .5rem;
-
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .icons-container {
     display: grid;
@@ -731,6 +718,10 @@ body {
 }
 .featured .featured-slider .box:hover .image{
     transform: translateY(6rem);
+    -webkit-transform: translateY(6rem);
+    -moz-transform: translateY(6rem);
+    -ms-transform: translateY(6rem);
+    -o-transform: translateY(6rem);
 }
 .featured.featured-slider.box.image img {
     height: 30rem;
@@ -801,7 +792,10 @@ body {
 }
 .featured .featured-slider .box:hover .icons {
     transform: translateY(0);
-
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 .featured .featured-slider .box .icons a:active {
     color: var(--green-color);
@@ -860,7 +854,9 @@ body {
     cursor: pointer;
     transition: all.3s ease;
     -webkit-transition: all.3s ease;
-
+    -moz-transition: all.3s ease;
+    -ms-transition: all.3s ease;
+    -o-transition: all.3s ease;
 }
 
 .notification {
@@ -1072,10 +1068,10 @@ ul{
     padding: 2rem;
     border: var(--border);
     border-radius: .5rem;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 
 .footer .box-container .box h3 {
@@ -1343,11 +1339,12 @@ ul{
 
 
 
-
+/*
 body {
     
     background: #dadada;
 }
+*/
 a {
     text-decoration: none;
     color:inherit;
@@ -1355,7 +1352,7 @@ a {
 
 nav {
 
-    background: #131921;
+    background: #dadada;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1476,7 +1473,7 @@ nav {
     position: absolute;
     top: 20%;
     z-index: 1;
-    padding: 5vh 1vw; 
+    padding: 5vh 1vw;
     background: #ffffff4f;
     color: #0000007b;
     text-decoration: none;
@@ -1484,6 +1481,10 @@ nav {
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
 }
 
 .control-next {
@@ -1610,7 +1611,7 @@ nav {
 }
 
 
-
+/*
 @media screen and (max-width: 1100px) {
     .heading::before {
         width: 90%;
