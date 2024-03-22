@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ElectroHub Sign Up</title>
+  <title>ElectroHub Sign Up Log In</title>
   <link rel="stylesheet" href="login.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
@@ -15,39 +15,80 @@
       <img src="images/logoo.png" alt="ElectroHub" width="50" height="50" border-radius="80%">
     </a>
   </header>
-  <main>
-    <h1>Sign in with business credentials</h1>
-    <form action="#">
-      <div class="form-group">
-        <label for="email">Email or mobile phone number</label>
-        <input type="email" id="email" name="email" required>
+  <body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">
+        Account
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
-        <a href="#">Forgot your password?</a>
+      <div class="title signup">
+        Account
       </div>
-      <div class="form-group">
-        <button type="submit">Sign in</button>
-        <label for="keep-signed-in">
-          <input type="checkbox" id="keep-signed-in" name="keep-signed-in">
-          Keep me signed in
-        </label>
-        <a href="#">Details</a>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab"></div>
       </div>
-    </form>
-    <p>New to ElectroHub? <a href="#">Create your free account</a></p>
-  </main>
-
-<footer>
-  <div class="social-icons">
-    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <div class="form-inner">
+        <form action="#" class="login">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="pass-link">
+            <a href="#">Reset password?</a>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">
+            Don't Have Account? <a href="">Create A New</a>
+          </div>
+        </form>
+        <form action="#" class="signup">
+          <div class="field">
+            <input type="text" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <input type="password" placeholder="Confirm Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="SignUp">
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
-  <p>&copy; 2022 ElectroHub. All rights reserved.</p>
-</footer>
-
+  <script>
+    const loginText = document.querySelector(".title-text .login");
+    const loginForm = document.querySelector("form.login");
+    const loginBtn = document.querySelector("label.login");
+    const signupBtn = document.querySelector("label.signup");
+    const signupLink = document.querySelector("form .signup-link a");
+    signupBtn.onclick = (() => {
+      loginForm.style.marginLeft = "-50%";
+      loginText.style.marginLeft = "-50%";
+    });
+    loginBtn.onclick = (() => {
+      loginForm.style.marginLeft = "0%";
+      loginText.style.marginLeft = "0%";
+    });
+    signupLink.onclick = (() => {
+      signupBtn.click();
+      return false;
+    });
+  </script>
 </body>
-</html>
 
+</html>
