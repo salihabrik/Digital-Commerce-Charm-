@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <title>Digital-Commerce-Charm</title>
+    
+  <link rel="stylesheet" href="collection.css">
+  
+
+
+<base href=https://m.media-amazon.com/images/I/41UPo0WJwvL._AC_UF226,226_FMjpg_.jpg"">
+<div id="carousel">
+  <figure id="spinner">
+    <img src="https://m.media-amazon.com/images/I/51onXIseENL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/51+FZDWGjzL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/51Ud-2hWlGL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/71EuTWD2qPL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/514naYDDoKL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src=" https://m.media-amazon.com/images/I/51kBdCl1JhL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/41UPo0WJwvL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/517GiVVr+3L._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/51onXIseENL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/51+FZDWGjzL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/51Ud-2hWlGL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/71EuTWD2qPL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/514naYDDoKL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src=" https://m.media-amazon.com/images/I/51kBdCl1JhL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/41UPo0WJwvL._AC_UF226,226_FMjpg_.jpg" alt>
+    <img src="https://m.media-amazon.com/images/I/517GiVVr+3L._AC_UF226,226_FMjpg_.jpg" alt>
+  </figure>
+</div>
+<span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+<span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
+  
+
+<script>
+    var angle = 0;
+function galleryspin(sign) { 
+spinner = document.querySelector("#spinner");
+if (!sign) { angle = angle + 45; } else { angle = angle - 45; }
+spinner.setAttribute("style","-webkit-transform: rotateY("+ angle +"deg); -moz-transform: rotateY("+ angle +"deg); transform: rotateY("+ angle +"deg);");
+}
+</script>
+</body>
+
+</html>
+
+  
