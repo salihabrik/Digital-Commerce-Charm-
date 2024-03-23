@@ -1,12 +1,16 @@
 # Project: "Digital-Commerce-Charm"
 
-## Introduction:
-Respected committee members, dear friends and colleagues, welcome everyone.
+Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
 
-Today, we would like to welcome you to our presentation on the "Digital-Commerce-Charm" project. We will provide you with an overview of the project, including its goals, technologies used, development report, and conclusion.
 
 ## Project Overview:
 "Digital-Commerce-Charm" is a project aimed at developing a comprehensive e-commerce platform, providing an excellent shopping experience for users. The project encompasses multiple objectives, including delivering an outstanding user experience, offering a wide range of products, ensuring a safe and secure shopping experience, achieving operational efficiency, and future platform expansion.
+
+## Website Screenshots:
+![Screenshot 1](elctrohub.jpg) ![Screenshot 2](electrohub1.jpg)
+
+## Video Demo:
+[![Video Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 
 ## Team Members:
 1. **Ibrahim ABOUELENIN:** Frontend and Backend Developer.
