@@ -14,7 +14,7 @@
 
 
 
-## Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
+## Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.![alt text](images/logoo.png)
 
 
 ## Project Overview:
@@ -50,7 +50,7 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 ## Team Members:
 
 1. **Ibrahim ABOUELENIN:** Frontend and Backend Developer.  
-   - GitHub: [ibrahimabouelenin](https://github.com/ibrahimabouelenin)
+   - GitHub: [ibrahimabouelenin](https://github.com/Blackhat-red-team)
    - LinkedIn: [Ibrahim ABOUELENIN](https://www.linkedin.com/in/ibrahimabouelenin/)
 
 2. **Abdulla Ahmed:** Frontend and Backend Developer.  
