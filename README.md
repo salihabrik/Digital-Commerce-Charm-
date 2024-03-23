@@ -19,7 +19,7 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 |---------------------------------|---------------------------------|---------------------------------|
 | Shop More                      | New Products                    | Best Sellers                    |
 | Today Deals                                     | Top Offers                                       |
-| ------------------------------------------------- | ------------------------------------------------- |
+
 | ![Screenshot 1](electrohub2.jpg) | ![Screenshot 2](electrohub6.jpg) |
 
 
