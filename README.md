@@ -10,7 +10,7 @@
 
 # Digital-Commerce-Charm
 <p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
-            <a href="#" class="btn">shop now</a>
+            <a href="https://salihabrik.github.io/Digital-Commerce-Charm-/" class="btn">shop now</a>
 
 
 
