@@ -8,6 +8,10 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
 
+<hr/>
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Digital-Commerce-Charm
 <p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
             <a href="https://salihabrik.github.io/Digital-Commerce-Charm-/" class="btn">shop now</a>
