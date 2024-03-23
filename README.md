@@ -14,9 +14,9 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 | ------------------------------------------------- | ------------------------------------------------- |
 | ![Screenshot 1](elctrohub.jpg) | ![Screenshot 2](electrohub1.jpg) |
 
-| ![electrohub ](electrohub7.jpg) | ![electrohub](electrohub8.jpg) | ![electrohub](electrohub3) |
-|----------------------- -----------------|----------------------------------------|----------------------------------------|
-| shop more                             | new products                             | best seller                             |
+| ![Electrohub](electrohub7.jpg) | ![Electrohub](electrohub8.jpg) | ![Electrohub](electrohub3.jpg) |
+|---------------------------------|---------------------------------|---------------------------------|
+| Shop More                      | New Products                    | Best Sellers                    |
 
 
 ## Video Demo:
