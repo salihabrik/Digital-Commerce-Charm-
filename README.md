@@ -121,3 +121,4 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 ## Conclusion:
 With this, we have presented our overview of the "Digital-Commerce-Charm" project. Thank you for your time and attention, and we look forward to any questions you may have.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
