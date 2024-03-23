@@ -1,13 +1,26 @@
-# Project: "Digital-Commerce-Charm"
+# Digital-Commerce-Charm
+<p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
+            <a href="#" class="btn">shop now</a>
+![Contributors](https://img.shields.io/badge/Contributors-220)
 
-Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
+![Freepik](https://img.shields.io/badge/Freepik-9B539C?style=flat&logo=freepik&logoColor=white)
+![Codepen](https://img.shields.io/badge/Codepen-000000?style=flat&logo=codepen&logoColor=white)
+![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
+![Canva](https://img.shields.io/badge/Canva-00C4CC?style=flat&logo=canva&logoColor=white)
+![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?style=flat&logo=android-studio&logoColor=white)
+[![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+
+
+## Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
 
 
 ## Project Overview:
 
 "Digital-Commerce-Charm" is a project aimed at developing a comprehensive e-commerce platform, providing an excellent shopping experience for users. The project encompasses multiple objectives, including delivering an outstanding user experience, offering a wide range of products, ensuring a safe and secure shopping experience, achieving operational efficiency, and future platform expansion.
 
-This project was developed as part of my # ALX final projcet
+This project was developed as part of my <a href="https://www.alxafrica.com/" target="_blank">ALX</a> final projcet
 
 ![ElectroHub](electrohub5.jpg) ElectroHub is an online marketplace for electronic devices. ElectroHub offers a wide range of smartphones, smart home devices, and other electronic accessories. We strive to provide a seamless and enjoyable shopping experience for tech enthusiasts.
 
@@ -31,10 +44,21 @@ This project was developed as part of my # ALX final projcet
 ## Video Demo:
 [![Video Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 
+
+
 ## Team Members:
-1. **Ibrahim ABOUELENIN:** Frontend and Backend Developer.
-2. **Abdulla Ahmed:** Frontend and Backend Developer.
-3. **Saliha Brik:** Frontend and Backend Developer.
+
+1. **Ibrahim ABOUELENIN:** Frontend and Backend Developer.  
+   - GitHub: [ibrahimabouelenin](https://github.com/ibrahimabouelenin)
+   - LinkedIn: [Ibrahim ABOUELENIN](https://www.linkedin.com/in/ibrahimabouelenin/)
+
+2. **Abdulla Ahmed:** Frontend and Backend Developer.  
+   - GitHub: [abdullaahmed](https://github.com/abdullaahmed)
+   - LinkedIn: [Abdulla Ahmed](https://www.linkedin.com/in/abdullaahmed/)
+
+3. **Saliha Brik:** Frontend and Backend Developer.  
+   - GitHub: [salihabrik](https://github.com/salihabrik)
+   - LinkedIn: [Saliha Brik](https://www.linkedin.com/in/salihabrik/)
 
 ## Technologies Used:
 
