@@ -4,13 +4,18 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 
 
 ## Project Overview:
+
 "Digital-Commerce-Charm" is a project aimed at developing a comprehensive e-commerce platform, providing an excellent shopping experience for users. The project encompasses multiple objectives, including delivering an outstanding user experience, offering a wide range of products, ensuring a safe and secure shopping experience, achieving operational efficiency, and future platform expansion.
 
-| ![ElectroHub](electrohub5.jpg) | ElectroHub is an online marketplace for electronic devices. ElectroHub offers a wide range of smartphones, smart home devices, and other electronic accessories. We strive to provide a seamless and enjoyable shopping experience for tech enthusiasts. |
+This project was developed as part of my # ALX final projcet
+
+![ElectroHub](electrohub5.jpg) ElectroHub is an online marketplace for electronic devices. ElectroHub offers a wide range of smartphones, smart home devices, and other electronic accessories. We strive to provide a seamless and enjoyable shopping experience for tech enthusiasts.
+
 
 
 
 ## Website Screenshots:
+
 | Today Deals                                     | Top Offers                                       |
 | ------------------------------------------------- | ------------------------------------------------- |
 | ![Screenshot 1](elctrohub.jpg) | ![Screenshot 2](electrohub1.jpg) |
@@ -18,9 +23,9 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 | ![Electrohub](electrohub7.jpg) | ![Electrohub](electrohub8.jpg) | ![Electrohub](electrohub3.jpg) |
 |---------------------------------|---------------------------------|---------------------------------|
 | Shop More                      | New Products                    | Best Sellers                    |
-| Today Deals                                     | Top Offers                                       |
 
 | ![Screenshot 1](electrohub2.jpg) | ![Screenshot 2](electrohub6.jpg) |
+
 
 
 ## Video Demo:
@@ -34,6 +39,7 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 ## Technologies Used:
 
 1. **Frontend Technologies:**
+2. 
    - ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat&logo=html5&logoColor=white)
    - ![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=flat&logo=css3&logoColor=white)
    - ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -41,12 +47,14 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 
 
 2. **Backend Technologies:**
+3. 
    - ![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=node.js&logoColor=white)
    - ![Express.js](https://img.shields.io/badge/-Express.js-000000?style=flat&logo=express&logoColor=white)
    - ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
    - ![Mongoose](https://img.shields.io/badge/-Mongoose-880000?style=flat&logo=mongoose&logoColor=white)
 
-3. **Other Tools and Services:**
+4. **Other Tools and Services:**
+5. 
    - ![Git](https://img.shields.io/badge/-Git-F05032?style=flat&logo=git&logoColor=white) and ![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat&logo=github&logoColor=white)
    - ![VSCode](https://img.shields.io/badge/-VSCode-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
    - ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)
