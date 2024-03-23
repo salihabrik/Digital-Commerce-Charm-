@@ -1,8 +1,4 @@
-# Digital-Commerce-Charm
-<p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
-            <a href="#" class="btn">shop now</a>
 ![Contributors](https://img.shields.io/badge/Contributors-220)
-
 ![Freepik](https://img.shields.io/badge/Freepik-9B539C?style=flat&logo=freepik&logoColor=white)
 ![Codepen](https://img.shields.io/badge/Codepen-000000?style=flat&logo=codepen&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
@@ -11,6 +7,11 @@
 [![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat&logo=github&logoColor=white)
+
+# Digital-Commerce-Charm
+<p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
+            <a href="#" class="btn">shop now</a>
+
 
 
 ## Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
