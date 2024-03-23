@@ -7,7 +7,7 @@ Welcome to ElectroHub, an innovative online marketplace where technology meets c
 "Digital-Commerce-Charm" is a project aimed at developing a comprehensive e-commerce platform, providing an excellent shopping experience for users. The project encompasses multiple objectives, including delivering an outstanding user experience, offering a wide range of products, ensuring a safe and secure shopping experience, achieving operational efficiency, and future platform expansion.
 
 ## Website Screenshots:
-![Screenshot 1](elctrohub.jpg) ![Screenshot 2](electrohub1.jpg)
+![Screenshot 1](elctrohub.jpg) | ![Screenshot 2](electrohub1.jpg)
 
 ## Video Demo:
 [![Video Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
