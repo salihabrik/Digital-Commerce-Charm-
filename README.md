@@ -60,12 +60,7 @@ This project was developed as part of my # ALX final projcet
    - ![Postman](https://img.shields.io/badge/-Postman-FF6C37?style=flat&logo=postman&logoColor=white)
    - ![Google Slides](https://img.shields.io/badge/-Google%20Slides-4285F4?style=flat&logo=google-slides&logoColor=white)
 
-## Website Screenshots:
-![Screenshot 1](path_to_screenshot_1.png)
-![Screenshot 2](path_to_screenshot_2.png)
 
-## Video Demo:
-[![Video Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
 
 ## Development Report:
 #### Achievements:
