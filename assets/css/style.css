@@ -2352,7 +2352,11 @@ footer {
     pointer-events: none;
     transition: var(--transition-timing);
     z-index: 5;
-  }
+    -webkit-transform:;
+    -moz-transform:;
+    -ms-transform:;
+    -o-transform:;
+}
 
   .desktop-menu-category-list .menu-category:hover > .dropdown-list {
     transform: translateY(0);
