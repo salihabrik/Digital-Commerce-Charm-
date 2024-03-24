@@ -8,8 +8,16 @@ app.set('view engine','ejs')
 app.set('views','views')
 
 app.get('/',(req,res,next)=>{
-    res.render('index')
+    res.render('./index.ejs')
 })
+
+// app.get('/', (req, res) => {
+//     res.render(path.join(__dirname, 'index.ejs'));
+// });
+
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, './index.ejs'));
+// });
 
 app.listen(3000,()=>{
     

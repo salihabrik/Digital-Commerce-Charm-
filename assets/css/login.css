@@ -214,7 +214,7 @@ $social-width: 20%;
 * {
   margin: 0;
   padding: 0;
-  @include box-sizing(border-box);
+  .@include box-sizing(border-box);
 }
 
 html, body {font-family: Raleway, sans-serif;  
