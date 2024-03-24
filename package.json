@@ -1,0 +1,25 @@
+{
+  "name": "ElectroHub",
+  "version": "1.0.0",
+  "description": "Digital-Commerce-Charm",
+  "main": "script.js",
+  "dependencies": {
+    "bytes": "^3.1.2",
+    "content-type": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salihabrik/ElectroHub.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salihabrik/ElectroHub/issues"
+  },
+  "homepage": "https://github.com/salihabrik/ElectroHub#readme"
+}
