@@ -1,48 +1,13 @@
 const express = require('express');
-const path = require('path');
+const ejs = require('ejs');
+var bodyparser =require('body-parser');
 
-const app = express();
+var app = express();
 
-app.use(express.static(path.join(__dirname, 'assets')));
-app.use(express.static(path.join(__dirname, 'images')));
-
-app.set('view engine', 'ejs');
-app.set('views', 'views');
-
-app.get('/', (req, res, next) => {
-    res.render('index');
-});
-
-app.listen(3000, () => {
-    console.log('Server listening on port 3000');
-});
-
-
-
-// const express = require('express')
-// const path =require('path')
-
-// const app = express()
-
-// app.use(express.static(path.join(__dirname,'assets')))
-// app.use(express.static(path.join(__dirname,'images')))
-
-// app.set('view engine','ejs')
-// app.set('views','views')
-
-// app.get('/',(req,res,next)=>{
-    res.render('index.ejs')
-// })
-
-// app.get('/', (req, res) => {
-//     res.render(path.join(__dirname, 'index.ejs'));
-// });
-
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, './index.ejs'));
-// });
-
-// app.listen(3000,()=>{
-    
-// console.log('server listen on port 3000')
-//})
+app.use(express.static('public'));
+app.set('view engine','ejs');
+app.listen(8080);
+app.use(bodyparser.urlencoded({extended:true}));
+app.get('/',(req,res)=>{
+res.render('pages/index')
+})

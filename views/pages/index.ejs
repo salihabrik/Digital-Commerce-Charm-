@@ -1,0 +1,3910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Creepster&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper-bundle.min.css">  
+    <title>Digital-Commerce-Charm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!--
+    - favicon
+  -->
+  
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="/css/style-prefix.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style2.css">
+
+  <link rel="stylesheet" href="/css/login.css">
+
+
+  
+  
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="/images/logoo.png" alt="subscribe newsletter" width="400" height="400">
+        
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h2 class="newsletter-title">Subscribe Newsletter.</h2>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>ElectroHub</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="https://m.media-amazon.com/images/I/61lOc+KPlIL._AC_UL320_.jpg" alt="drones" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Drones
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+
+
+
+  <!--HEADER-->
+
+  <header>
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <h2>
+            <b>Free Shipping</b>
+            This Week Order Over - $55
+          </h2>
+        </div>
+
+        <div class="header-top-actions">
+
+          <select name="currency">
+
+            <option value="usd">USD &dollar;</option>
+            <option value="eur">EUR &euro;</option>
+
+          </select>
+
+          <select name="language">
+
+            <option value="en-US">English</option>
+            <option value="es-ES">Espa&ntilde;ol</option>
+            <option value="fr">Fran&ccedil;ais</option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+  <a href="#" class="header-logo">
+  <div class="logo-container">
+    <img src="/images/logoo.png" alt="ELECTROHUB's logo" width="80" height="80" class="circular-logo">
+    <span class="logo-text">ELECTROHUB</span>
+  </div>
+  </a>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <a href="login.html" class="action-btn">
+              <ion-icon name="person-outline"></ion-icon>
+              </a>
+            
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">20</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">40</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container" >
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Home</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Categories</a>
+
+            <div class="dropdown-panel">
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electronics</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Desktop</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Laptop</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Camera</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Tablet</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Headphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="" alt="" width="20"
+                      height="20">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">MOBILE PHONES</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">APPLE</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Huawei</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Samsung</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Realme</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">OPPO</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Xiaomi</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#">Honor</a>
+                </li>
+
+
+
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="/images/" alt="" width="20" height="20">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">ACCESSORIES</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Computer Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mobile Accessories</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">WEARABLES</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Audio </a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">TV Accessories</a>
+                </li>
+                <li class="panel-list-item">
+                  <a href="#"> Digital Camera</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="/images/" alt="" width="80" height="80">
+                  </a>
+                </li>
+
+              </ul>
+
+              <ul class="dropdown-panel-list">
+
+                <li class="menu-title">
+                  <a href="#">Electronics</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Smart Watch</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Smart TV</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Keyboard</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Mouse</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">Microphone</a>
+                </li>
+
+                <li class="panel-list-item">
+                  <a href="#">
+                    <img src="/images/" alt="" width="80" height="80">
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">MOBILE & TABLETS</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mobile Phones</a>
+                
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tablets</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">IPADS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">MACBOOK</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">GAMING</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">PLAYSTATION</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">GAMING ACCESSORIES</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">GAMING LAPTOPS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">GAMES CD</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">HOME APPLIANCES</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">LARGE HOME APPLIANCES</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">SMALL HOME APPLIANCES</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">TVs</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Air Conditioners</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title"> corporate_solutions</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Business Computer</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Business Printers</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Servers</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Surveillance</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">Hot Offers</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">BEST SELLER</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">Mobile Phones</a>
+                
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">Tablets</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">IPADS</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">MACBOOK</a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">30</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">80</span>
+      </button>
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="grid-outline"></ion-icon>
+      </button>
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">Menu</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="home.html" class="menu-title">Home</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">ACCESSORIES</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"></a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"></a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"></a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"></a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">MOBILES</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">SUMSUNG</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">IPHONE</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">HONOR</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">OPPO</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">LAPTOPS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">LENOVO</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">HP</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ACCER</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">DELL</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">ELECTRONICS</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ACCESSORIESES</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">CAMERA</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">DRONES</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">MOBILE</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Blog</a>
+        </li>
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">Hot Offers</a>
+        </li>
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+
+          <li class="menu-category">
+
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Language</p>
+
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">English</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Espa&ntilde;ol</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">Fren&ccedil;h</a>
+              </li>
+
+            </ul>
+
+          </li>
+
+          <li class="menu-category">
+            <button class="accordion-menu" data-accordion-btn>
+              <p class="menu-title">Currency</p>
+              <ion-icon name="caret-back-outline" class="caret-back"></ion-icon>
+            </button>
+
+            <ul class="submenu-category-list" data-accordion>
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">USD &dollar;</a>
+              </li>
+
+              <li class="submenu-category">
+                <a href="#" class="submenu-title">EUR &euro;</a>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <main>
+    
+    <section class="home" id="home">
+        <div class="row">
+            
+        <div class="content">
+            <h3>up to 75%</h3>
+            <p>Unlock the Best Deals with Every Click!<br> Empower Your Purchase – Compare, Click, Conquer.</p>
+            <a href="#" class="btn">shop now</a>
+        </div>
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81yjvAosFLL._AC_UL320_.jpg" alt="" ></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/711f6KLsMaL._AC._SR360,460.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51Ud-2hWlGL._AC_UF420%2C420_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/519B9TqxuaL._AC_UF420%2C420_FMjpg_.jpg" alt="" ></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71rERLQ4p-L._AC_UY218_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61IXQ2l-h+L._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71z3D2yOjxL._AC._SR360,460.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81dI08mZslL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/519H19-NatL._AC_SY200_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71-KUvv1ckL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81GHk8mQXxL._AC._SR360,460.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51o1FxWqX9L._AC._SR360,460.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61XZQXFQeVL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71OyrTkxpGL._AC._SR360,460.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81YQTED1r5L._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/7156XdW9vcL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/71AxBnrBJNL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61MgPeUAfvL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81sKyjPUm8L._AC_UL320_.jpg" alt=""></a>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+        <!-- Home Section -->
+      <div class="category">
+
+      <div class="container">
+
+        <div class="category-item-container has-scrollbar">
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/smartwatch.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">SMART WATCH</h3>
+
+                <p class="category-item-amount">(53)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/top1.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">TABLETES</h3>
+
+                <p class="category-item-amount">(58)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/headphone.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">HEADPHONES</h3>
+
+                <p class="category-item-amount">(68)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/drone.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">DRONES</h3>
+
+                <p class="category-item-amount">(84)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/laptop.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">LAPTOPS</h3>
+
+                <p class="category-item-amount">(35)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/tv.jpg" alt="" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">TVS</h3>
+
+                <p class="category-item-amount">(16)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/smartwatch2.jpg" alt="watch" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">Watch</h3>
+
+                <p class="category-item-amount">(27)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+          <div class="category-item">
+
+            <div class="category-img-box">
+              <img src="/images/airpods.jpg" alt="TWS" width="30">
+            </div>
+
+            <div class="category-content-box">
+
+              <div class="category-content-flex">
+                <h3 class="category-item-title">TWS</h3>
+
+                <p class="category-item-amount">(39)</p>
+              </div>
+
+              <a href="#" class="category-btn">Show all</a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    <div class="notification">
+    <img src="/images/flashsale.gif" alt="Notification">
+    </div>
+
+      </div>
+    <div class="products-slider">
+        <h2>SHOP BY BRAND</h2>
+        <div class="products">
+            <img src="/images/apple.png" alt="">
+            <img src="/images/vivo.png" alt="">
+            <img src="/images/huawei.png" alt="">
+            <img src="/images/honor.png" alt="">
+            <img src="/images/infinix.png" alt="">
+            <img src="/images/oppo.png" alt="">
+            <img src="/images/samsung.png" alt="">
+            <img src="/images/redmi.png" alt="">
+            <img src="/images/nokia.png" alt="">
+            <img src="/images/mi.png" alt="">
+        </div>
+    </div>
+ 
+    <div class="box-row ">
+        <div class="box-col">
+            <h3>Smart Watch</h3>
+            <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/klevu_images/200X200/w/t/wt054-1-min_1.jpg" alt="" width="200" height="180">
+            <a href="#">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Laptops for study</h3>
+            <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/klevu_images/200X200/z/l/zl374-zl374.png" alt="" width="200" height="180">
+            <a href="#">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Drones </h3>
+        <img src="https://m.media-amazon.com/images/I/51KA0bQmPDL._AC_UL320_.jpg" alt="" width="200" >
+            <a href="#">Shop more</a>
+        </div>
+        <div class="box-col">
+            <h3>Headphones</h3>
+            <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/klevu_images/200X200/h/p/hp235-1-min.jpg" alt="" width="200" >
+            <a href="#">Shop more</a>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="notification">
+    <img src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/Deals/BigSpringSale/Browse/LP/TodaysDeal/BSS24_268_TodaysDealPage_Header_DT_1500x175.jpg" alt="Notification">
+    </div>
+
+
+  <section class="home" id="home">
+  <h2>Today's Deals</h2>
+        <div class="row">
+        <div class="swiper books-slider">
+            <div class="swiper-wrapper">
+                <a href="#"class="swiper-slide"><img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/klevu_images/200X200/h/p/hp235-1-min.jpg" alt="" ></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61lOc+KPlIL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/klevu_images/200X200/w/t/wt054-1-min_1.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/41V7+9mufcL._SY500__AC_UF420%2C420_FMjpg_.jpg" alt="" ></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51JM7T5ww6L._AC_UF420%2C420_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/41gVg8CcwRL._AC_UF420%2C420_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61dOQyU3R1L._AC_UY218_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61B-ePmpFWL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/31nKL8PoYaL._SR480,440_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/61qDODtzXUL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/711F6T6aySL._AC_SR480%2C570_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/514naYDDoKL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/418lsm0rdhL._AC_SR400,600_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51SJl-k8hPL._AC_SR400,600_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/41grudo62vL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/41QQBA01KxL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/81cp0NTn-EL._AC_UL320_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51KItfW1P2L._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+                <a href="#"class="swiper-slide"><img src="https://m.media-amazon.com/images/I/41h-nzg1NSL._AC_UF226,226_FMjpg_.jpg" alt=""></a>
+                
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <div class="products-slider-with-price">
+        <h2>Deals Under $250</h2>
+        <div class="products">
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/91rIiWcvS7L._AC_UL320_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>224.49</span> List Price: $200.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/61Y1P6uIRFL._AC_UL160_SR160,160_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>214.49</span> List Price: $199.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/71z3D2yOjxL._AC_UL320_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>299.49</span> List Price: $190.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/41cbb5DMUhL._AC_UY218_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>204.49</span> List Price: $139.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/61iElTZODtL._AC_UY218_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>334.49</span> List Price: $299.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/61lQDemaKfL._AC_UL320_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>214.49</span> List Price: $199.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/81Dm65eja8L._AC_UY218_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>354.49</span> List Price: $259.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="https://m.media-amazon.com/images/I/61MgPeUAfvL._AC_UY218_.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="/images/best4.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="/images/best2.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+        <div class="product-card">
+            <div class="product-img-container">
+                <img src="/images/best1.jpg" alt="">
+            </div>
+            <div class="product-offer">
+                <p>25% OFF</p> <span>Deal</span>
+            </div>
+            <p class="product-price">$ <span>14.49</span> List Price: $19.99</p>
+            <h4>This product is the best for you </h4>
+
+        </div>
+    </div>
+    </div>
+
+
+    <div class="notification">
+    <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/wysiwyg/Ramadan_2024_newTheme/topoffers_banner_en_web.jpg" alt="Notification">
+    </div>
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>Top Offers </span></h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top0.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>iPhone 14 Plus-128GB Starlight</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Xiaomi Redmi Note 12-6GB RAM -128GB -</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Honor X9b 5G - 12GB RAM -256GB-Orange</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Samsung Galaxy Fold5-12GB RAM-256GB</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top5.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Apple iPhone 14 Pro Max - 256GB - Gold</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top6.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Apple iPhone 15 Pro Max 256GB - Black</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top7.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Samsung Galaxy Z Fold5 - 12GB RAM - 512GB -</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top8.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Infinix Hot 30i-8GB RAM -128GB -Diamond</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top9.jpg" alt="">
+                        
+                    </div>
+                    <div class="content">
+                        <h3>Samsung Galaxy A54 5G 8GB RAM 128GB - Lime</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top10.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3> Oppo Reno10-8GB RAM -256GB - Silver</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <div class="icons">
+                        <a href="#" class="fas fa-search"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+
+                    </div>
+                    <div class="image">
+                        <img src="/images/top11.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Vivo V29E - 8GB RAM - 256GB - Forest Black</h3>
+                        <div class="price">$415.99<span>$400.99</span></div>
+                        <a href="#" class="btn">Add to cart</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    </section>
+  
+
+
+
+
+
+    <!--
+      - PRODUCT
+    -->
+
+    <div class="notification">
+    <img src="/images/flashsale2.gif" alt="Notification">
+    </div>
+    <div class="product-container">
+
+  <div class="container">
+
+
+        <!--
+          - SIDEBAR
+        -->
+
+        <div class="sidebar  has-scrollbar" data-mobile-menu>
+
+          <div class="sidebar-category">
+
+            <div class="sidebar-top">
+              <h2 class="sidebar-title">Category</h2>
+
+              <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+            </div>
+
+            <ul class="sidebar-menu-category-list">
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/top3.jpg" alt="" width="20" height="20"
+                      class="menu-title-img">
+
+                    <p class="menu-title">MOBILE & TABLET</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">IPHONE</p>
+                      <data value="300" class="stock" title="Available Stock">300</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SUMSUNG</p>
+                      <data value="60" class="stock" title="Available Stock">60</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">REALME</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">OPPO</p>
+                      <data value="87" class="stock" title="Available Stock">87</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/laptop.jpg" alt="footwear" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">COMPUTERS</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">HP</p>
+                      <data value="45" class="stock" title="Available Stock">45</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">DELL</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">LENOVO</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">ACER</p>
+                      <data value="26" class="stock" title="Available Stock">26</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/gaming.jfif" alt="" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">GAMING</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">PLAYSTATION</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">GAMING ACCESSORIES</p>
+                      <data value="73" class="stock" title="Available Stock">73</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">GAMING HEADPHONES</p>
+                      <data value="61" class="stock" title="Available Stock">61</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/airpods.jpg" alt="" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">ACCESSORIES</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">HOME APPLIANCES</p>
+                      <data value="12" class="stock" title="Available Stock">12 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">LARGE HOME APPLIANCES</p>
+                      <data value="60" class="stock" title="Available Stock">60 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SMALL HOME APPLIANCES</p>
+                      <data value="50" class="stock" title="Available Stock">50 pcs</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">TVs</p>
+                      <data value="87" class="stock" title="Available Stock">87 pcs</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/3.jpg" alt="" class="menu-title-img" width="20"
+                      height="20">
+
+                    <p class="menu-title">PERSONNEL CARE</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Personnel Care</p>
+                      <data value="68" class="stock" title="Available Stock">68</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Sunscreen</p>
+                      <data value="46" class="stock" title="Available Stock">46</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Health Care</p>
+                      <data value="79" class="stock" title="Available Stock">79</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Air Conditioners</p>
+                      <data value="23" class="stock" title="Available Stock">23</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/corprate.jfif" alt="" class="" width="20"
+                      height="20">
+
+                    <p class="menu-title">Corporate Solutions</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Business Computer</p>
+                      <data value="50" class="stock" title="Available Stock">50</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">Business Printers</p>
+                      <data value="48" class="stock" title="Available Stock">48</data>
+                    </a>
+                  </li>
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">servers</p>
+                      <data value="48" class="stock" title="Available Stock">28</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="sidebar-menu-category">
+
+                <button class="sidebar-accordion-menu" data-accordion-btn>
+
+                  <div class="menu-title-flex">
+                    <img src="/images/DEAL.jpg" alt="" class="menu-title-img" width="20" height="20">
+
+                    <p class="menu-title">DEALS</p>
+                  </div>
+
+                  <div>
+                    <ion-icon name="add-outline" class="add-icon"></ion-icon>
+                    <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+                  </div>
+
+                </button>
+
+                <ul class="sidebar-submenu-category-list" data-accordion>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">SONY PLAYSTATION 5 STANDARD</p>
+                      <data value="62" class="stock" title="Available Stock">62</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">tablets</p>
+                      <data value="35" class="stock" title="Available Stock">35</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">laptops</p>
+                      <data value="80" class="stock" title="Available Stock">80</data>
+                    </a>
+                  </li>
+
+                  <li class="sidebar-submenu-category">
+                    <a href="#" class="sidebar-submenu-title">
+                      <p class="product-name">drones</p>
+                      <data value="75" class="stock" title="Available Stock">75</data>
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="product-showcase">
+
+            <h2 class="showcase-heading">best sellers</h2>
+
+            <div class="showcase-wrapper">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://m.media-amazon.com/images/I/51neRkHpUML._AC_UY218_.jpg" alt="" width="85" height="95"
+                      class="showcase-img">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Meta Quest 2 — Advanced All-In-One Virtual Reality Headset — 128 GB</h4>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$240.00</del>
+                      <p class="price">$224.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://m.media-amazon.com/images/I/71K7+tbtXuL._AC_UL320_.jpg" alt="" class="showcase-img"
+                      width="85" height="95">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Garmin Instinct Crossover Solar, Rugged Hybrid Smartwatch with Solar Charging Capabilities, Analog Hands and Digital Display</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$499.00</del>
+                      <p class="price">$399.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://m.media-amazon.com/images/I/41AuzibyEAL._AC_SR400,600_.jpg" alt="" class="showcase-img" width="85"
+                      height="95">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">SAMSUNG Galaxy S24 Ultra Cell Phone, 512GB AI Smartphone</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$1419.00</del>
+                      <p class="price">$1269.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <a href="#" class="showcase-img-box">
+                    <img src="https://m.media-amazon.com/images/I/71slFjJerBL._AC_SR480%2C570_.jpg" alt="" class="showcase-img" width="85"
+                      height="95">
+                  </a>
+
+                  <div class="showcase-content">
+
+                    <a href="#">
+                      <h4 class="showcase-title">Motorola razr+ | 2023</h4>
+                    </a>
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <del>$999.00</del>
+                      <p class="price">$699.00</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <div class="product-box">
+
+          <!--
+            - PRODUCT MINIMAL
+          -->
+
+          <div class="product-minimal">
+
+            <div class="product-showcase">
+
+              <h2 class="title">New Arrivals</h2>
+
+              <div class="showcase-wrapper has-scrollbar">
+
+                <div class="showcase-container">
+
+                  <div class="showcase">
+
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/n2.jpg" alt="" width="70" class="showcase-img">
+                    </a>
+
+                    <div class="showcase-content">
+
+                      <a href="#">
+                        <h4 class="showcase-title">BLACK+DECKER 1 Cup Coffee Maker</h4>
+                      </a>
+
+                      <a href="#" class="showcase-category"></a>
+
+                      <div class="price-box">
+                        <p class="price">$45.00</p>
+                        <del>$12.00</del>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/n1.jpg" alt="" class="showcase-img" width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">VGR Rechargeable Hair Shaver - V-290</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Clothes</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$9.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/n3.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">BLACK+DECKER Digital Air Fryer Oven 12L</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Electronic</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$76.00</p>
+                        <del>$25.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                  <div class="showcase">
+                  
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/n4.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                  
+                    <div class="showcase-content">
+                  
+                      <a href="#">
+                        <h4 class="showcase-title">Tornado Vacuum Cleaner 1600 Watt</h4>
+                      </a>
+                  
+                      <a href="#" class="showcase-category">Electronic</a>
+                  
+                      <div class="price-box">
+                        <p class="price">$68.00</p>
+                        <del>$31.00</del>
+                      </div>
+                  
+                    </div>
+                  
+                  </div>
+
+                </div>
+
+                <div class="showcase-container">
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/6.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title">Sharp Microwave 25L - 900W - Grill</h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Electronic</a>
+                
+                      <div class="price-box">
+                        <p class="price">$61.00</p>
+                        <del>$11.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/5.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">Accessories</a>
+                
+                      <div class="price-box">
+                        <p class="price">$32.00</p>
+                        <del>$20.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/top3.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">PHONES</a>
+                
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$25.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                  <div class="showcase">
+                
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/top1.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+                
+                    <div class="showcase-content">
+                
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+                
+                      <a href="#" class="showcase-category">PHONES</a>
+                
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$10.00</del>
+                      </div>
+                
+                    </div>
+                
+                  </div>
+                
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Trending</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t1.jpg" alt="Joyroom JR-FT3 Pro Fit-Life Series Smart Watch - Dark Gray" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"Joyroom JR-FT3 Pro Fit-Life Series Smart Watch - Dark Gray></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SmartWatch</a>
+            
+                      <div class="price-box">
+                        <p class="price">$49.00</p>
+                        <del>$15.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t2.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Huawei Watch GT 4</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SmartWatch</a>
+            
+                      <div class="price-box">
+                        <p class="price">$78.00</p>
+                        <del>$36.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t3.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">LENOVO TAB M 10 PLUS</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">TABLETES</a>
+            
+                      <div class="price-box">
+                        <p class="price">$94.00</p>
+                        <del>$42.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t4.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">REALME V53-6 GB</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">MOBILE</a>
+            
+                      <div class="price-box">
+                        <p class="price">$54.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/T5.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">Huawei nova Y90-8GB</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">MOBILE</a>
+            
+                      <div class="price-box">
+                        <p class="price">$52.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/T3.jpg" alt="" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">MOBILE</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/1.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category"></a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t2.jpg" alt="" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">MOBILE</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$55.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+            <div class="product-showcase">
+            
+              <h2 class="title">Top Rated</h2>
+            
+              <div class="showcase-wrapper  has-scrollbar">
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t1.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">Watches</a>
+            
+                      <div class="price-box">
+                        <p class="price">$50.00</p>
+                        <del>$34.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/top3.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWATCH</a>
+            
+                      <div class="price-box">
+                        <p class="price">$84.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/smartwatch.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWATCH</a>
+            
+                      <div class="price-box">
+                        <p class="price">$42.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/top5.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category"></a>
+            
+                      <div class="price-box">
+                        <p class="price">$24.00</p>
+                        <del>$10.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                </div>
+            
+                <div class="showcase-container">
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/top2.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title"></h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWATCH</a>
+            
+                      <div class="price-box">
+                        <p class="price">$62.00</p>
+                        <del>$65.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/smartwatch1.jpg" alt="" class="showcase-img" width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">SMARTWATCH</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWatch</a>
+            
+                      <div class="price-box">
+                        <p class="price">$56.00</p>
+                        <del>$78.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/T3.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">SMARTWATCH</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWATCH</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+            
+                  </div>
+            
+                  <div class="showcase">
+            
+                    <a href="#" class="showcase-img-box">
+                      <img src="/images/t1.jpg" alt="" class="showcase-img"
+                        width="70">
+                    </a>
+            
+                    <div class="showcase-content">
+            
+                      <a href="#">
+                        <h4 class="showcase-title">SMARTWATCH</h4>
+                      </a>
+            
+                      <a href="#" class="showcase-category">SMARTWATCH</a>
+            
+                      <div class="price-box">
+                        <p class="price">$20.00</p>
+                        <del>$30.00</del>
+                      </div>
+            
+                    </div>
+      
+                  </div>
+            
+                </div>
+            
+              </div>
+            
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT FEATURED
+          -->
+
+          <div class="product-featured">
+
+            <h2 class="title">Deal of the day</h2>
+
+            <div class="showcase-wrapper has-scrollbar">
+
+              <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="/images/DEAL.jpg" alt="" class="showcase-img">
+                  </div>
+
+                 <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Sony PlayStation 5 Standard 825 GB</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Lorem ipsum dolor sit amet consectetur Lorem ipsum
+                      dolor dolor sit amet consectetur Lorem ipsum dolor
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$150.00</p>
+
+                      <del>$200.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase-container">
+              
+                <div class="showcase">
+              
+                  <div class="showcase-banner">
+                    <img src="https://m.media-amazon.com/images/I/71ipll64HuL._AC_UL320_.jpg" alt="" class="showcase-img">
+                  </div>
+              
+                  <div class="showcase-content">
+              
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+              
+                    <h3 class="showcase-title">
+                      <a href="#" class="showcase-title"></a>
+                      <a href="#" class="showcase-title"></a>
+                    </h3>
+              
+                    <p class="showcase-desc">
+                      ECOVACS DEEBOT X2 Omni Robot Vacuum and Mop, 8000Pa Suction, 15mm Lift, Omni Station with Hot Water
+                    </p>
+              
+                    <div class="price-box">
+                      <p class="price">$1990.00</p>
+                      <del>$2000.00</del>
+                    </div>
+              
+                    <button class="add-cart-btn">add to cart</button>
+              
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p> already sold: <b>15</b> </p>
+              
+                        <p> available: <b>40</b> </p>
+                      </div>
+              
+                      <div class="showcase-status-bar"></div>
+                    </div>
+              
+                    <div class="countdown-box">
+              
+                      <p class="countdown-desc">Hurry Up! Offer ends in:</p>
+              
+                      <div class="countdown">
+                        <div class="countdown-content">
+                          <p class="display-number">360</p>
+                          <p class="display-text">Days</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+              
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+                      </div>
+              
+                    </div>
+              
+                  </div>
+              
+                </div>
+              
+              </div>
+
+               <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="https://images-na.ssl-images-amazon.com/images/G/01/us-manual-merchandising/RBS-in-house-Graphics/Moen_ct_400x400_En2.jpg" alt="" class="showcase-img">
+                  </div>
+
+                 <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title"></h3>Moen 900-001 Flo Smart Water
+                    </a>
+
+                    <p class="showcase-desc">
+                      Moen 900-001 Flo Smart Water Monitor and Automatic Shutoff Sensor, Wi-Fi Water Leak Detector for 3/4-Inch Diameter Pipe
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$390.00</p>
+
+                      <del>$490.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+               <div class="showcase-container">
+
+                <div class="showcase">
+                  
+                  <div class="showcase-banner">
+                    <img src="https://m.media-amazon.com/images/I/61s9NPsT66L._AC_UL320_.jpg" alt="" class="showcase-img">
+                  </div>
+
+                 <div class="showcase-content">
+                    
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <a href="#">
+                      <h3 class="showcase-title">Dreametech L10s Ultra Robot</h3>
+                    </a>
+
+                    <p class="showcase-desc">
+                      Dreametech L10s Ultra Robot Vacuum and Mop Combo, Auto Mop Cleaning and Drying, Self-Refilling and Self-Emptying Base for 60 Days of Cleaning, 5300Pa Suction and AI Navigation, Compatible with Alexa
+                    </p>
+
+                    <div class="price-box">
+                      <p class="price">$750.00</p>
+
+                      <del>$890.00</del>
+                    </div>
+
+                    <button class="add-cart-btn">add to cart</button>
+
+                    <div class="showcase-status">
+                      <div class="wrapper">
+                        <p>
+                          already sold: <b>20</b>
+                        </p>
+
+                        <p>
+                          available: <b>40</b>
+                        </p>
+                      </div>
+
+                      <div class="showcase-status-bar"></div>
+                    </div>
+
+                    <div class="countdown-box">
+
+                      <p class="countdown-desc">
+                        Hurry Up! Offer ends in:
+                      </p>
+
+                      <div class="countdown">
+
+                        <div class="countdown-content">
+
+                          <p class="display-number">360</p>
+
+                          <p class="display-text">Days</p>
+
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">24</p>
+                          <p class="display-text">Hours</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">59</p>
+                          <p class="display-text">Min</p>
+                        </div>
+
+                        <div class="countdown-content">
+                          <p class="display-number">00</p>
+                          <p class="display-text">Sec</p>
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <!--
+            - PRODUCT GRID
+          -->
+
+          <div class="product-main">
+<div class="notification">
+    <img src="/images/flashsale.gif" alt="Notification">
+  </div>
+            <h2 class="title">New Products</h2>
+
+            <div class="product-grid">
+
+              <div class="showcase">
+
+                <div class="showcase-banner">
+
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/a944db7c58a57ce039dc4dec48ac8f50/m/v/mv937-1_1.jpg" alt="" width="300" class="product-img default">
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/a944db7c58a57ce039dc4dec48ac8f50/m/v/mv937-3_1.jpg" alt="" width="300" class="product-img hover">
+
+                  <p class="showcase-badge">15%</p>
+
+                  <div class="showcase-actions">
+
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase-content">
+
+                  <a href="#" class="showcase-category">MOBILE</a>
+
+                  <a href="#">
+                    <h3 class="showcase-title">Vivo Y36 - 8GB RAM - 256GB - Meteor Black</h3>
+                  </a>
+
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+
+                  <div class="price-box">
+                    <p class="price">$48.00</p>
+                    <del>$75.00</del>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/08a84a1c53d21da95cee3377f8156b2c/z/m/zm035-1.png" alt="" class="product-img default"
+                >
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/a944db7c58a57ce039dc4dec48ac8f50/z/m/zm035-2.png" alt="" class="product-img hover"
+                >
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">COMPUTERS</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Huawei Matebook D14 Laptop - Intel® Core™ i3-1115G4 - 8GB - 256GB SSD - Intel® UHD Graphics - 14 Inch - Win11 - Mystic Silver</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$1000.00</p>
+                    <del>$990.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/a944db7c58a57ce039dc4dec48ac8f50/w/t/wt324-1-min.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="https://smhttp-ssl-73217.nexcesscdn.net/pub/media/catalog/product/cache/a944db7c58a57ce039dc4dec48ac8f50/w/t/wt324-2-min.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">SMARTWATCH</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Amazfit GTR 4 Smart Watch - Racetrack Grey</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="https://m.media-amazon.com/images/I/41Smpu2gZcL._AC_US100_.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="https://m.media-amazon.com/images/I/41mHsA8L-fL._AC_US100_.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle pink">new</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">MOBILES</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">SAMSUNG Galaxy S24 Ultra Cell Phone, 512GB AI Smartphone, Unlocked Android, 50MP Zoom Camera, Long Battery Life, S Pen, US Version, 2024, Titanium Yellow</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$1025.00</p>
+                    <del>$1035.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/best2.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="/images/best1.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">ELECTRONIC</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"></a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$99.00</p>
+                    <del>$105.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/T5.jpg" alt="Pocket Watch Leather Pouch" class="product-img default"
+                    width="300">
+                  <img src="/images/top0.jpg" alt="Pocket Watch Leather Pouch" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">watches</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Pocket Watch Leather Pouch</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$150.00</p>
+                    <del>$170.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/t1.jpg" alt="Smart watche Vital Plus" class="product-img default"
+                    width="300">
+                  <img src="/images/t2.jpg" alt="Smart watche Vital Plus" class="product-img hover" width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">SMARTwatches</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Smart watche Vital Plus</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$100.00</p>
+                    <del>$120.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/M2.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="/images/M3.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"></a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"></a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$25.00</p>
+                    <del>$30.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/t1.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="/images/t2.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"></a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"></a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$32.00</p>
+                    <del>$45.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/top2.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="/images/top4.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category"></a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"></a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$58.00</p>
+                    <del>$64.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/1.jpg" alt="" class="product-img default"
+                    width="300">
+                  <img src="/images/1.jpg" alt="" class="product-img hover"
+                    width="300">
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">Electronic</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title"></a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$50.00</p>
+                    <del>$65.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+              <div class="showcase">
+              
+                <div class="showcase-banner">
+                  <img src="/images/best3.jpg" alt=""
+                    class="product-img default" width="300">
+                  <img src="/images/M2.jpg" alt=""
+                    class="product-img hover" width="300">
+              
+                  <p class="showcase-badge angle black">sale</p>
+              
+                  <div class="showcase-actions">
+                    <button class="btn-action">
+                      <ion-icon name="heart-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="repeat-outline"></ion-icon>
+                    </button>
+              
+                    <button class="btn-action">
+                      <ion-icon name="bag-add-outline"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              
+                <div class="showcase-content">
+                  <a href="#" class="showcase-category">SMARTWATCH</a>
+              
+                  <h3>
+                    <a href="#" class="showcase-title">Mibro A1 Smart Watch - Tarnish (PH Warranty)</a>
+                  </h3>
+              
+                  <div class="showcase-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                  </div>
+              
+                  <div class="price-box">
+                    <p class="price">$78.00</p>
+                    <del>$85.00</del>
+                  </div>
+              
+                </div>
+              
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+  </div>
+
+  </div>
+
+
+  </main>
+
+
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">ACCESSORIES</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">MOBILES</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">COMPUTERS</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">SMARTWatches</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">BEST COMPARE</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+        
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+        
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+        
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+        <img src="/images/payment.png" alt="payment method" class="payment-img">
+        
+         <a href="#" class="header-logo">
+          <img src="/images/logoo.png" alt="ELECTROHUB's logo" width="80" height="80" class="circular-logo">
+        </a>
+        <p class="copyright">
+          Copyright &copy; <a href="#"></a>  <span class="logo-text">ELECTROHUB</span> All Rights Reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <!--
+    - custom js link
+  -->
+  <script src="/js/script2.js"></script>
+  <script src="/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script width="140" height="200"pt src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const booksSwiper = new Swiper('.books-slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swiper for featured slider
+    const featuredSlider = new Swiper(".featured-slider", {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 5,
+            },
+        },
+    });
+});
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+
+      </script>
+</body>
+
+</html>
