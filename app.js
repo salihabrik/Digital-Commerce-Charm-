@@ -1,6 +1,13 @@
 const express = require('express');
 const ejs = require('ejs');
 var bodyparser =require('body-parser');
+var mysql = require('mysql')
+mysql.createConnection({
+    host:"localhost",
+    user:"root",
+    password:"",
+    database:"node_project"
+})
 
 var app = express();
 
