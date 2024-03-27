@@ -1,0 +1,99 @@
+<table class="pt-5" style="width: 100%;">
+    <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>SubTotal</th>
+    </tr>
+    <% cart.forEach(function(item) { %>
+    <tr>
+        <td>
+            <div class="product-info">
+                <img src="images/<%= item.image %>" alt="">
+                <div>
+                    <p><%= item.name %></p>
+                    <small>Price: $<%= item.price.toFixed(2) %></small>
+                    <br>
+                    <form action="/remove-item" method="POST">
+                        <input type="hidden" name="id" value="<%= item.id %>">
+                        <button type="submit" class="remove-btn">Remove</button>
+                    </form>
+                </div>
+            </div>
+        </td>
+        <td>$<%= item.price.toFixed(2) %></td>
+        <td>
+            <form action="/update-quantity" method="POST">
+                <input type="number" name="quantity" value="<%= item.quantity %>" min="1" max="10">
+                <input type="hidden" name="id" value="<%= item.id %>">
+                <button type="submit" class="update-btn">Update</button>
+            </form>
+        </td>
+        <td>$<%= (item.price * item.quantity).toFixed(2) %></td>
+    </tr>
+    <% }) %>
+</table>
+
+
+<section class="cart container mt-2 my-3 py-5">
+    <div class="container mt-2">
+        <h4>YOUR CART</h4>
+    </div>
+    <table class="pt-5" style="width: 100%;">
+        <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>SubTotal</th>
+        </tr>
+        <% cart.forEach(function(item) => { %>
+        <tr>
+            <td>
+                <div class="product-info">
+                    <img src="images/<%= item.image %>" alt="">
+                    <div>
+                        <p><%= item.name %></p>
+                        <small>Price: $50.00</small>
+                        <br>
+                        <form >
+                            <input type="submit" name="remove_btn" value="Remove" class="remove-btn">
+                        </form>
+                    </div>
+                </div>
+            </td>
+            <td>$50.00</td>
+            <td>
+                <form action="/update-quantity" method="POST">
+                    <input type="number" name="quantity" value="1" min="1" max="10">
+                    <input type="hidden" name="id" value="1">
+                    <input type="submit" name="update_btn" value="Update" class="update-btn">
+                </form>
+            </td>
+            <td>
+            <span class="product-price"><%= item.price * item.quantity%></span>
+            </td>
+            </tr>
+
+    </table>
+    <% }) %>
+    <div class="cart-total">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>$100.00</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>$5.00</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>$105.00</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+
+</section>

@@ -155,6 +155,97 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+        document.addEventListener('DOMContentLoaded', function () {
+    const booksSwiper = new Swiper('.books-slider', {
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+            slidesPerView: 3,
+        },
+        768: {
+            slidesPerView: 3,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
 
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+});
+document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Swiper for featured slider
+    const featuredSlider = new Swiper(".featured-slider", {
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1024: {
+                slidesPerView: 5,
+            },
+        },
+    });
+});
+// Carousel Auto-Cycle
+  $(document).ready(function() {
+    $('.carousel').carousel({
+      interval: 6000
+    })
+  });
+ // Get the close button element
+    var closeButton = document.querySelector('.modal-close-btn');
+
+    // Get the modal element
+    var modal = document.querySelector('.modal');
+
+    // Get the modal overlay element
+    var overlay = document.querySelector('.modal-close-overlay');
+
+    // Function to close the modal
+    function closeModal() {
+        modal.style.display = 'none'; // Hide the modal
+    }
+
+    // Add click event listener to close button
+    closeButton.addEventListener('click', function() {
+        closeModal(); // Call the closeModal function when close button is clicked
+    });
+
+    // Add click event listener to overlay
+    overlay.addEventListener('click', function() {
+        closeModal(); // Call the closeModal function when overlay is clicked
+    });
+
+    // Function to open the modal
+    function openModal() {
+        modal.style.display = 'block'; // Show the modal
+    };
+
+    
+    
 
 
