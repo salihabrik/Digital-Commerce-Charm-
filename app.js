@@ -30,3 +30,43 @@ app.get('/',(req,res)=>{
     })
 
 })
+
+
+
+
+
+
+app.get('/cart', function(req, res){
+
+    var cart = req.sessions.cart;
+    var total = req.sessions.total;
+    res.render('pages/cart',
+    {
+        cart:cart,
+        total:total
+    });
+
+app.post('/remove_product', function(req, res){
+    var id = req.body.id;
+    var cart = req.sessions.cart;
+    var total = req.sessions.total;
+    for (let i = 0; i < cart.length; i++)
+    {
+        if (cart[i].id == id)
+        {
+            cart.splice(cart.indexOf(i), 1);
+            
+        }
+    }
+    calculateTotal(cart, req);
+    res.redirect('/cart');
+
+    total = total - cart[i].price;
+    req.sessions.cart = cart;
+    req.sessions.total = total;
+    res.redirect('/cart');
+
+    });
+})
+
+app.post('/add_product', function(req, res){
