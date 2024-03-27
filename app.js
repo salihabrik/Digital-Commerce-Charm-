@@ -19,5 +19,14 @@ app.listen(8080,()=>{
 });
 app.use(bodyparser.urlencoded({extended:true}));
 app.get('/',(req,res)=>{
-res.render('pages/index')
+ var con = mysql.createConnection({
+        host:"localhost",
+        user:"root",
+        password:"",
+        database:"node_project"
+    })
+    con.query("SELECT * FROM prodcuts",(err,result)=>{
+        res.render('pages/index',{result:result});
+    })
+
 })
