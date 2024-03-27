@@ -9,11 +9,14 @@ mysql.createConnection({
     database:"node_project"
 })
 
+
 var app = express();
 
 app.use(express.static('public'));
 app.set('view engine','ejs');
-app.listen(8080);
+app.listen(8080,()=>{
+    console.log('server is start on port 8080');
+});
 app.use(bodyparser.urlencoded({extended:true}));
 app.get('/',(req,res)=>{
 res.render('pages/index')

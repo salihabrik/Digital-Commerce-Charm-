@@ -20,7 +20,7 @@
 
 ## Welcome to ElectroHub
 
-<img src="images/logoo.png" alt="ElectroHub Logo" width="100%" height="200">
+<img src="/public/images/logoo.png" alt="ElectroHub Logo" width="100%" height="200">
 
 ## Welcome to ElectroHub, an innovative online marketplace where technology meets convenience. ElectroHub is a dynamic eCommerce platform meticulously crafted with cutting-edge technologies such as Node.js, React, and MongoDB. Our mission is to provide tech enthusiasts with a seamless and enjoyable shopping experience, offering a wide range of electronic gadgets and accessories. From smartphones to smart home devices, our platform caters to every digital need. ElectroHub is more than just a marketplace; it's a hub for tech enthusiasts to explore, discover, and indulge in the latest innovations. Join us on this electrifying journey and experience the future of online shopping.
 
@@ -32,7 +32,7 @@
 
 This project was developed as part of my <a href="https://www.alxafrica.com/" target="_blank">ALX</a> final projcet
 
-![ElectroHub](images/electrohub5.jpg) ElectroHub is an online marketplace for electronic devices. ElectroHub offers a wide range of smartphones, smart home devices, and other electronic accessories. We strive to provide a seamless and enjoyable shopping experience for tech enthusiasts.
+![ElectroHub](/public/images/electrohub5.jpg) ElectroHub is an online marketplace for electronic devices. ElectroHub offers a wide range of smartphones, smart home devices, and other electronic accessories. We strive to provide a seamless and enjoyable shopping experience for tech enthusiasts.
 
 
 
