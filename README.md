@@ -41,13 +41,13 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 
 | Today Deals                                     | Top Offers                                       |
 | ------------------------------------------------- | ------------------------------------------------- |
-| ![Screenshot 1](images/elctrohub.jpg) | ![Screenshot 2](images/electrohub1.jpg) |
+| ![Screenshot 1](/public/images/elctrohub.jpg) | ![Screenshot 2](/public/images/electrohub1.jpg) |
 
-| ![Electrohub](images/electrohub7.jpg) | ![Electrohub](images/electrohub8.jpg) | ![Electrohub](images/electrohub3.jpg) |
+| ![Electrohub](/public/images/electrohub7.jpg) | ![Electrohub](/public/images/electrohub8.jpg) | ![Electrohub](/public/images/electrohub3.jpg) |
 |---------------------------------|---------------------------------|---------------------------------|
 | Shop More                      | New Products                    | Best Sellers                    |
 
-| ![Screenshot 1](images/electrohub2.jpg) | ![Screenshot 2](images/electrohub6.jpg) |
+| ![Screenshot 1](/public/images/electrohub2.jpg) | ![Screenshot 2](/public/images/electrohub6.jpg) |
 
 
 
