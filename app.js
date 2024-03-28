@@ -10,22 +10,22 @@ var con = mysql.createConnection({
     password: "",
     database: "node_project"
 });
-con.connect(function(err) {
-    if (err) {
-        console.error('Error connecting to Db');
-        return process.exit(1);
-    }
-    console.log('Connection established');
-});
+// con.connect(function(err) {
+//     if (err) {
+//         console.error('Error connecting to Db');
+//         return process.exit(1);
+//     }
+//     console.log('Connection established');
+// });
 
-con.on('error', function(err) {
-    console.log('Database error', err);
-    if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Reconnection logic
-        con = mysql.createConnection(con.config);
-    } else {
-        throw err;
-    }
-});
+// con.on('error', function(err) {
+//     console.log('Database error', err);
+//     if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Reconnection logic
+//         con = mysql.createConnection(con.config);
+//     } else {
+//         throw err;
+//     }
+// });
 var app = express();
 
 app.use(express.static('public'));
@@ -42,111 +42,114 @@ app.get('/', (req, res) => {
         if (err) throw err;
         res.render('pages/index', { result: result });
     });
+app.get("/",(req, res) => {
+res.render("login");
+})
 });
 
-app.post('/add_to_cart', (req, res) => {
-    var product = req.body;
-    if (req.session.cart == null) {
-        req.session.cart = [];
-        req.session.cart.push(product);
-        req.session.total = product.price;
-    } else {
-        var cart = req.session.cart;
-        var position = -1;
-        for (var i = 0; i < cart.length; i++) {
-            if (cart[i].id == product.id) {
-                position = i;
-                break;
-            }
-        }
-        if (position >= 0) {
-            cart[position].quantity += product.quantity;
-        } else {
-            cart.push(product);
-        }
-        req.session.total += product.price;
-    }
-    res.redirect('/cart');
-});
+// app.post('/add_to_cart', (req, res) => {
+//     var product = req.body;
+//     if (req.session.cart == null) {
+//         req.session.cart = [];
+//         req.session.cart.push(product);
+//         req.session.total = product.price;
+//     } else {
+//         var cart = req.session.cart;
+//         var position = -1;
+//         for (var i = 0; i < cart.length; i++) {
+//             if (cart[i].id == product.id) {
+//                 position = i;
+//                 break;
+//             }
+//         }
+//         if (position >= 0) {
+//             cart[position].quantity += product.quantity;
+//         } else {
+//             cart.push(product);
+//         }
+//         req.session.total += product.price;
+//     }
+//     res.redirect('/cart');
+// });
 
-app.get('/cart', function (req, res) {
-    var cart = req.session.cart;
-    var total = req.session.total;
-    res.render('pages/cart', {
-        cart: cart,
-        total: total
-    });
-});
+// app.get('/cart', function (req, res) {
+//     var cart = req.session.cart;
+//     var total = req.session.total;
+//     res.render('pages/cart', {
+//         cart: cart,
+//         total: total
+//     });
+// });
 
-app.post('/remove_product', function (req, res) {
-    var id = req.body.id;
-    var cart = req.session.cart;
-    var total = req.session.total;
-    for (let i = 0; i < cart.length; i++) {
-        if (cart[i].id == id) {
-            total -= cart[i].price;
-            cart.splice(i, 1);
-            break;
-        }
-    }
-    req.session.cart = cart;
-    req.session.total = total;
-    res.redirect('/cart');
-});
+// app.post('/remove_product', function (req, res) {
+//     var id = req.body.id;
+//     var cart = req.session.cart;
+//     var total = req.session.total;
+//     for (let i = 0; i < cart.length; i++) {
+//         if (cart[i].id == id) {
+//             total -= cart[i].price;
+//             cart.splice(i, 1);
+//             break;
+//         }
+//     }
+//     req.session.cart = cart;
+//     req.session.total = total;
+//     res.redirect('/cart');
+// });
 
-app.post('/edit_product_quantity', function (req, res) {
-    var id = req.body.id;
-    var quantity = req.body.quantity;
-    var increase_btn = req.body.increase_product_quantity;
-    var decrease_btn = req.body.decrease_product_quantity;
+// app.post('/edit_product_quantity', function (req, res) {
+//     var id = req.body.id;
+//     var quantity = req.body.quantity;
+//     var increase_btn = req.body.increase_product_quantity;
+//     var decrease_btn = req.body.decrease_product_quantity;
 
-    var cart = req.session.cart;
+//     var cart = req.session.cart;
 
-    for (let i = 0; i < cart.length; i++) {
-        if (cart[i].id == id) {
-            if (increase_btn && cart[i].quantity > 0) {
-                cart[i].quantity += 1;
-            } else if (decrease_btn && cart[i].quantity > 0) {
-                cart[i].quantity -= 1;
-            }
-            break;
-        }
-    }
+//     for (let i = 0; i < cart.length; i++) {
+//         if (cart[i].id == id) {
+//             if (increase_btn && cart[i].quantity > 0) {
+//                 cart[i].quantity += 1;
+//             } else if (decrease_btn && cart[i].quantity > 0) {
+//                 cart[i].quantity -= 1;
+//             }
+//             break;
+//         }
+//     }
 
-    req.session.cart = cart;
-    res.redirect('/cart');
-});
+//     req.session.cart = cart;
+//     res.redirect('/cart');
+// });
 
-app.get('/checkout', function (req, res) {
-    var cart = req.session.cart;
-    var total = req.session.total;
-    res.render('pages/checkout', {
-        cart: cart,
-        total: total
-    });
-});
+// app.get('/checkout', function (req, res) {
+//     var cart = req.session.cart;
+//     var total = req.session.total;
+//     res.render('pages/checkout', {
+//         cart: cart,
+//         total: total
+//     });
+// });
 
-app.post('/place_order', function (req, res) {
-    var order = req.body;
-    var cart = req.session.cart;
-    var total = req.session.total;
-    var query = "INSERT INTO orders SET ?";
-    var values = {
-        ...order,
-        total: total
-    };
-    con.query(query, values, (err, result) => {
-        if (err) throw err;
-        req.session.cart = [];
-        req.session.total = 0;
-        res.redirect('/payment');
-    });
-});
+// app.post('/place_order', function (req, res) {
+//     var order = req.body;
+//     var cart = req.session.cart;
+//     var total = req.session.total;
+//     var query = "INSERT INTO orders SET ?";
+//     var values = {
+//         ...order,
+//         total: total
+//     };
+//     con.query(query, values, (err, result) => {
+//         if (err) throw err;
+//         req.session.cart = [];
+//         req.session.total = 0;
+//         res.redirect('/payment');
+//     });
+// });
 
-app.get('/payment', function (req, res) {
-    var total = req.session.total;
-    res.render('pages/payment', { total: total });
-});
+// app.get('/payment', function (req, res) {
+//     var total = req.session.total;
+//     res.render('pages/payment', { total: total });
+// });
 
 
 
@@ -391,5 +394,4 @@ app.get('/payment', function(req, res){
     
 
     })
-    
-
+    */
