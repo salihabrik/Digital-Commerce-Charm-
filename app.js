@@ -10,7 +10,22 @@ var con = mysql.createConnection({
     password: "",
     database: "node_project"
 });
+con.connect(function(err) {
+    if (err) {
+        console.error('Error connecting to Db');
+        return process.exit(1);
+    }
+    console.log('Connection established');
+});
 
+con.on('error', function(err) {
+    console.log('Database error', err);
+    if (err.code === 'PROTOCOL_CONNECTION_LOST') { // Reconnection logic
+        con = mysql.createConnection(con.config);
+    } else {
+        throw err;
+    }
+});
 var app = express();
 
 app.use(express.static('public'));
