@@ -42,8 +42,9 @@ app.get('/', (req, res) => {
         if (err) throw err;
         res.render('pages/index', { result: result });
     });
-app.get("/",(req, res) => {
-res.render("login");
+    
+app.get("/login",(req, res) => {
+res.render('login');
 })
 });
 
