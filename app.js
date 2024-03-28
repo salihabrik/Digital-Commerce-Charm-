@@ -3,13 +3,27 @@ const session = require('express-session');
 const ejs = require('ejs');
 var bodyparser = require('body-parser');
 var mysql = require('mysql');
-
+const dotenv =require('dotenv')
+dotenv.config({path:'./.env'});
 var con = mysql.createConnection({
     host: "localhost",
     user: "root",
     password: "",
     database: "node_project"
 });
+var db = mysql.createConnection({
+    host: process.env.DATABASE_Host,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
+});
+db.connect((error) => {
+if(error) {
+    console.log(error)
+    }else{
+        console.log("mysql connect")
+    }
+})
 // con.connect(function(err) {
 //     if (err) {
 //         console.error('Error connecting to Db');
@@ -42,11 +56,12 @@ app.get('/', (req, res) => {
         if (err) throw err;
         res.render('pages/index', { result: result });
     });
-    
-app.get("/login",(req, res) => {
-res.render('login');
-})
+});  
+app.get('/login.ejs', (req, res) => {
+    res.render('pages/login',);
 });
+
+
 
 // app.post('/add_to_cart', (req, res) => {
 //     var product = req.body;
