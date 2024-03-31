@@ -1,40 +1,6 @@
 const express = require('express');
 const app = express();
 const session = require('express-session');
-const bodyParser = require('body-parser');
-const path = require('path');
-
-// Set the view engine to EJS
-app.set('view engine', 'ejs');
-
-// Set the directory for views
-app.set('views', path.join(__dirname, 'views'));
-
-// Middleware to parse JSON bodies
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-
-// Set up sessions
-app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: true }));
-
-// Define routes
-app.use('/', require('./routes/pages'));
-app.use('/auth', require('./routes/auth'));
-
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Start the server
-const port = process.env.PORT || 4000;
-app.listen(port, () => {
-    console.log(`Server is listening at http://localhost:${port}`);
-});
-
-
-
-/*const express = require('express');
-const app = express();
-const session = require('express-session');
 const ejs = require('ejs');
 var bodyParser = require('body-parser');
 var fs =require('fs');
@@ -42,7 +8,6 @@ var mysql = require('mysql');
 const dotenv =require('dotenv');
 const path = require('path');
 dotenv.config({path:'./.env'});
-
 // var con = mysql.createConnection({
 //     host: "localhost",
 //     user: "root",
