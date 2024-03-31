@@ -5,7 +5,8 @@ const ejs = require('ejs');
 var bodyParser = require('body-parser');
 var fs =require('fs');
 var mysql = require('mysql');
-const dotenv =require('dotenv')
+const dotenv =require('dotenv');
+const path = require('path');
 dotenv.config({path:'./.env'});
 // var con = mysql.createConnection({
 //     host: "localhost",
@@ -95,6 +96,8 @@ app.set('view engine', 'ejs');
 //     const users = JSON.parse(fs.readFileSync('users.json'));
 // })
 app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: true }));
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
 
 // app.listen(3000, () => {
 //     console.log('server is start on port 3000');
@@ -113,6 +116,8 @@ app.get('/login.ejs', (req, res) => {
     res.render('pages/login',);
 });
 
+const publicDirectory =path.join(__dirname,'./public')
+app.use(express.static(publicDirectory));
 
 // app.get('/register.ejs',(req,res)=>{
 //     res.render('pages/register');
