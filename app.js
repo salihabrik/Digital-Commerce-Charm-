@@ -1,29 +1,75 @@
 const express = require('express');
+const app = express();
 const session = require('express-session');
 const ejs = require('ejs');
-var bodyparser = require('body-parser');
+var bodyParser = require('body-parser');
+var fs =require('fs');
 var mysql = require('mysql');
 const dotenv =require('dotenv')
 dotenv.config({path:'./.env'});
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "",
-    database: "node_project"
+// var con = mysql.createConnection({
+//     host: "localhost",
+//     user: "root",
+//     password: "",
+//     database: "node_project"
+// });
+// var db = mysql.createConnection({
+//     host: process.env.DATABASE_Host,
+//     user: process.env.DATABASE_USER,
+//     password: process.env.DATABASE_PASSWORD,
+//     database: process.env.DATABASE
+// });
+// db.connect((error) => {
+// if(error) {
+//     console.log(error)
+//     }else{
+//         console.log("mysql connect")
+//     }
+// })
+
+
+
+
+const port = 3000;
+
+// Middleware to parse JSON bodies
+app.use(bodyParser.json());
+
+// Endpoint to handle login
+// app.post('/login', (req, res) => {
+//     const { username, password } = req.body;
+//     const users = JSON.parse(fs.readFileSync('users.json'));
+
+//     const user = users.find(user => user.username === username && user.password === password);
+
+//     if (user) {
+//         res.status(200).send('Login successful!');
+//     } else {
+//         res.status(401).send('Invalid credentials');
+//     }
+// });
+
+app.listen(port, () => {
+    console.log(`Server is listening at http://localhost:${port}`);
 });
-var db = mysql.createConnection({
-    host: process.env.DATABASE_Host,
-    user: process.env.DATABASE_USER,
-    password: process.env.DATABASE_PASSWORD,
-    database: process.env.DATABASE
-});
-db.connect((error) => {
-if(error) {
-    console.log(error)
-    }else{
-        console.log("mysql connect")
-    }
-})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // con.connect(function(err) {
 //     if (err) {
 //         console.error('Error connecting to Db');
@@ -40,28 +86,40 @@ if(error) {
 //         throw err;
 //     }
 // });
-var app = express();
+
 
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
-app.use(bodyparser.urlencoded({ extended: true }));
+// app.post('/login', (req, res) => {
+//     const { username, password } = req.body;
+//     const users = JSON.parse(fs.readFileSync('users.json'));
+// })
 app.use(session({ secret: 'secret-key', resave: false, saveUninitialized: true }));
 
-app.listen(8080, () => {
-    console.log('server is start on port 8080');
-});
+// app.listen(3000, () => {
+//     console.log('server is start on port 3000');
+// });
 
-app.get('/', (req, res) => {
-    con.query("SELECT * FROM products", (err, result) => {
-        if (err) throw err;
-        res.render('pages/index', { result: result });
-    });
-});  
+// app.get('/', (req, res) => {
+//     con.query("SELECT * FROM products", (err, result) => {
+//         if (err) throw err;
+//         res.render('pages/index', { result: result });
+//     });
+// });  
+// router.get('/',(req,res)=>{
+//     res.render('pages/index');
+// });
 app.get('/login.ejs', (req, res) => {
     res.render('pages/login',);
 });
 
 
+// app.get('/register.ejs',(req,res)=>{
+//     res.render('pages/register');
+// });
+//Define routes
+app.use('/',require('./routes/pages'))
+app.use('/auth',require('./routes/auth'));
 
 // app.post('/add_to_cart', (req, res) => {
 //     var product = req.body;
