@@ -14,12 +14,12 @@ dotenv.config({path:'./.env'});
 //     password: "",
 //     database: "node_project"
 // });
-// var db = mysql.createConnection({
-//     host: process.env.DATABASE_Host,
-//     user: process.env.DATABASE_USER,
-//     password: process.env.DATABASE_PASSWORD,
-//     database: process.env.DATABASE
-// });
+const db = mysql.createConnection({
+    host: process.env.DATABASE_Host,
+    user: process.env.DATABASE_USER,
+    password: process.env.DATABASE_PASSWORD,
+    database: process.env.DATABASE
+});
 // db.connect((error) => {
 // if(error) {
 //     console.log(error)
