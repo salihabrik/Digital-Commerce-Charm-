@@ -4,22 +4,39 @@ const session = require('express-session');
 const ejs = require('ejs');
 var bodyParser = require('body-parser');
 var fs =require('fs');
-var mysql = require('mysql');
+const mysql = require('mysql');
 const dotenv =require('dotenv');
 const path = require('path');
 dotenv.config({path:'./.env'});
-// var con = mysql.createConnection({
-//     host: "localhost",
-//     user: "root",
-//     password: "",
-//     database: "node_project"
-// });
+
+
 const db = mysql.createConnection({
     host: process.env.DATABASE_Host,
     user: process.env.DATABASE_USER,
     password: process.env.DATABASE_PASSWORD,
     database: process.env.DATABASE
 });
+
+
+app.set( ('view engine', 'hbs'))
+
+db.connect( (error) => {
+    if(error) {
+        console.log(error);
+    } else {
+       console.log("MYSQL Connected....") 
+    }
+})
+
+app.get("/", function(req, res) {
+    res.render("pages/index");
+});
+
+app.listen(3002, function() {
+    console.log("Server started on port 3002");
+})
+
+
 // db.connect((error) => {
 // if(error) {
 //     console.log(error)
@@ -53,23 +70,6 @@ app.use(bodyParser.json());
 app.listen(port, () => {
     console.log(`Server is listening at http://localhost:${port}`);
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // con.connect(function(err) {
 //     if (err) {
@@ -229,21 +229,6 @@ app.use('/auth',require('./routes/auth'));
 //     var total = req.session.total;
 //     res.render('pages/payment', { total: total });
 // });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 const express = require('express');
@@ -474,3 +459,5 @@ app.get('/payment', function(req, res){
 
     })
     */
+// app.get('/cart', function(req, res){
+
