@@ -116,6 +116,11 @@ app.get('/login.ejs', (req, res) => {
     res.render('pages/login',);
 });
 
+
+app.get('/register.ejs', (req, res) => {
+    res.render('pages/register',);
+});
+
 const publicDirectory =path.join(__dirname,'./public')
 app.use(express.static(publicDirectory));
 
