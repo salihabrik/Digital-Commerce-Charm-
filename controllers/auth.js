@@ -29,5 +29,5 @@ exports.register =(req,res) =>{
         }
     })
     
-    res.send("Form submitted");
+    res.send("signup done");
 }
