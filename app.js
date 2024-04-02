@@ -117,6 +117,11 @@ app.get('/login.ejs', (req, res) => {
 });
 
 
+
+app.get('/cart.ejs', (req, res) => {
+    res.render('pages/cart',);
+});
+
 app.get('/register.ejs', (req, res) => {
     res.render('pages/register',);
 });
