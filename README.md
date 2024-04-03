@@ -50,9 +50,9 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 | ![Screenshot 1](/public/images/electrohub2.jpg) | ![Screenshot 2](/public/images/electrohub6.jpg) |
 
 
+## Video Demo
+[![Video Demo](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)
 
-## Video Demo:
-[![Video Demo](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)]
 
 
 ## Team Members:
