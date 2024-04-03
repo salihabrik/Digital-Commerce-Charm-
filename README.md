@@ -52,8 +52,7 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 
 
 ## Video Demo:
-[![Video Demo](http://img.youtube.com/vi/YOUTUBE_VIDEO_ID/0.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID)
-
+[![Video Demo](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)]
 
 
 ## Team Members:
