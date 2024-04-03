@@ -122,6 +122,57 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 2. Expand features and functionalities to meet the evolving market needs and enhance user experience.
 3. Enhance security and stability through improvements in security and continuous quality testing.
 
+## Digital-Commerce-Charm Backend
+# Getting Started
+To get the backend of Digital-Commerce-Charm up and running locally, follow these steps:
+
+# Prerequisites
+Make sure you have the following installed on your system:
+
+Node.js
+npm (Node Package Manager)
+mysql (MySQL)
+
+## Installation
+# Clone the repository:
+
+```
+git clone https://github.com/salihabrik/Digital-Commerce-Charm-backend.git
+```
+# Navigate to the project directory:
+
+```
+cd Digital-Commerce-Charm-backend
+```
+
+# Install dependencies:
+
+``
+npm install
+``
+## Configuration
+
+Create a .env file in the root directory of the project:
+
+makefile
+```
+DATABASE_HOST=localhost
+DATABASE_USER=username
+DATABASE_PASSWORD=password
+DATABASE_NAME=digital_commerce_charm
+```
+Replace username and password with your database credentials.
+
+Starting the Server
+Start the backend server:
+
+```
+npm start
+``
+The server should now be running at http://localhost:3000.
+
+
+
 ## Conclusion:
 With this, we have presented our overview of the "Digital-Commerce-Charm" project. Thank you for your time and attention, and we look forward to any questions you may have.
 
