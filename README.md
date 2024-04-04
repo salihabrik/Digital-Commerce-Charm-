@@ -1,4 +1,4 @@
-![Contributors](https://img.shields.io/badge/Contributors-220)
+no![Contributors](https://img.shields.io/badge/Contributors-220)
 ![Freepik](https://img.shields.io/badge/Freepik-9B539C?style=flat&logo=freepik&logoColor=white)
 ![Codepen](https://img.shields.io/badge/Codepen-000000?style=flat&logo=codepen&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)
@@ -173,6 +173,7 @@ The server should now be running at http://localhost:3000.
 
 
 ## Conclusion:
+
 With this, we have presented our overview of the "Digital-Commerce-Charm" project. Thank you for your time and attention, and we look forward to any questions you may have.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
