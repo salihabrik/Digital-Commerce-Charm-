@@ -51,7 +51,7 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 
 
 ## Video Demo
-[![Video Demo](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)](public/images/WhatsApp%20Video%202024-04-04%20at%2012.45.59%20AM.mp4)
+[![Video Demo](https://youtu.be/3rJzRjBYGSo?si=tX5cxamG3y-2Bqtn)](https://youtu.be/3rJzRjBYGSo?si=tX5cxamG3y-2Bqtn)
 
 
 
