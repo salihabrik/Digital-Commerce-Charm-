@@ -51,9 +51,8 @@ This project was developed as part of my <a href="https://www.alxafrica.com/" ta
 
 
 ## Video Demo
-[![Video Demo](https://youtu.be/3rJzRjBYGSo?si=tX5cxamG3y-2Bqtn)](https://youtu.be/3rJzRjBYGSo?si=tX5cxamG3y-2Bqtn)
-
-
+## Video Demo
+[![Video Demo](https://img.youtube.com/vi/3rJzRjBYGSo/0.jpg)](https://youtu.be/3rJzRjBYGSo?si=n6NsPvVdTJnQsZlB)
 
 ## Team Members:
 
